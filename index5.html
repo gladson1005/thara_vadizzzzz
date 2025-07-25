@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beautiful Family Tree</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f0f8ff, #e6e6fa);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+
+    .tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .generation {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .member {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 180px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .member:hover {
+      transform: scale(1.05);
+    }
+
+    .member img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 2px solid #ccc;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin: 10px 0 5px;
+    }
+
+    .thought {
+      font-size: 13px;
+      color: #666;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Return Button</title>
+  <style>
+    .return-button {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+      z-index: 1000;
+    }
+    .return-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="return-button" onclick="goBack()">← Go Back</button>
+
+  <script>
+    function goBack() {
+      if (document.referrer) {
+        window.history.back(); // Go back to previous page
+      } else {
+        window.location.href = "D:\Sample Project/family.html"; // Fallback if no history
+    
+    } }
+  </script>
+
+ 
+</body>
+</html>
+
+
+  <h1>🌿 Our Family Tree 🌿</h1>
+
+  <div class="tree">
+
+    <!-- Grandparents -->
+    <div class="generation">
+      <div class="member">
+        <img src="D:\Sample Project\gallary/app.jpg" alt="Grandfather">
+        <div class="name">Grandpa</div>
+        <div class="thought">"Wise and kind."</div>
+      </div>
+      <div class="member">
+        <img src="D:\Sample Project\gallary/grandma.jpg" alt="Grandmother">
+        <div class="name">Grandma</div>
+        <div class="thought">"Heart of the family."</div>
+      </div>
+    </div>
+
+    <!-- Parents -->
+    <div class="generation">
+      <div class="member">
+        <img src="D:\Sample Project\gallary/father.jpg" alt="Father">
+        <div class="name">Dad</div>
+        <div class="thought">"Strong and supportive."</div>
+      </div>
+      <div class="member">
+        <img src="D:\Sample Project\gallary/mom.jpg" alt="Mother">
+        <div class="name">Mom</div>
+        <div class="thought">"Love in every way."</div>
+      </div>
+    </div>
+
+    <!-- Children -->
+    <div class="generation">
+      <div class="member">
+        <img src="D:\Sample Project\gallary/me.jpg" alt="You">
+        <div class="name">Me</div>
+        <div class="thought">"Branching out."</div>
+      </div>
+     
+      <div class="member">
+        <img src="D:\Sample Project\gallary/god.jpeg" alt="Brother">
+        <div class="name">Brother</div>
+        <div class="thought">"A true friend."</div>
+      </div> 
+       <div class="member">
+        <img src="" >
+        <div class="name"></div>
+        <div class="thought"></div>
+      </div >
+      </div>
+       
+
+    <!-- Cousins -->
+    <div class="generation">
+      <div class="member">
+        <img src="D:\Sample Project\gallary/ell.jpg" alt="Cousin 1">
+        <div class="name">Elsy</div>
+        <div class="thought">"Always fun!"</div>
+      </div>
+      <div class="member">
+        <img src="D:\Sample Project\gallary/rp.jpg" alt="Cousin 2">
+        <div class="name">Ruby</div>
+        <div class="thought">"Smiles all day."</div>
+      </div>
+      <div class="member">
+        <img src="D:\Sample Project\gallary/dda.jpg" alt="Cousin 3">
+        <div class="name">Inasu</div>
+        <div class="thought">"Playful spirit."</div>
+      </div>
+      <div class="member">
+        <img src="D:\Sample Project\gallary/bp.jpg" alt="Cousin 4">
+        <div class="name">Beena</div>
+        <div class="thought">"Heart of gold."</div>
+      </div>
+    </div>
+<!-- Cousins' Families (Big Size Photos) -->
+<div class="generation" style="gap: 40px; flex-wrap: wrap; margin-top: 50px;">
+  <div class="member" style="width: 300px;">
+    <img src="D:\Sample Project\gallary/elsy.jpg" alt="Cousin 1 Family" style="height: 300px;">
+    <div class="name">Elsy Family</div>
+    <div class="thought">"Love grows in every branch 🌿"</div>
+  </div>
+
+  <div class="member" style="width: 300px;">
+    <img src="D:\Sample Project\gallary/ruby.jpg" alt="Cousin 2 Family" style="height: 300px;">
+    <div class="name">Ruby  Family</div>
+    <div class="thought">"Together is our favorite place."</div>
+  </div>
+
+  <div class="member" style="width: 300px;">
+    <img src="D:\Sample Project\gallary/inasu.jpg" alt="Cousin 3 Family" style="height: 300px;">
+    <div class="name"> Inasu Family</div>
+    <div class="thought">"A happy family is a beautiful thing."</div>
+  </div>
+
+  <div class="member" style="width: 300px;">
+    <img src="D:\Sample Project\gallary/beena.jpg" alt="Cousin 4 Family" style="height: 300px;">
+    <div class="name">Beena Family</div>
+    <div class="thought">"Where life begins and love never ends."</div>
+  </div>
+</div>
+
+
+</body>
+</html>
